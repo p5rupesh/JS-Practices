@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!--product page sorting (reference myntra website)
+    
+    dropdown list - sort by price low to high, price high to low, rating 1-5
+
+    grid - image, title, price, rating
+    
+    -->
+    <!---->
+    <!---->
+    <!--    LOGO AND NAVIGATION     -->
+    <header>
+        <div class="header header-container container">
+            <a href="#" class="logo">
+                <h1>Logo</h1>
+            </a>
+            <nav class="site-navigation">
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Home & Living</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li>
+                        <a href="#">Studio<span>New</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--    BREADCRUMBS     -->
+    <section class="breadcrumbs container">
+        <p>Home / Clothing / Men's T-Shirts</p>
+    </section>
+
+    <!--    PRODUCT GRID     -->
+    <section class="product-grid">
+        <div class="container">
+            <h2 class="product-grid-title">
+                Men T-Shirts - <span>1234 items</span>
+            </h2>
+            <div class="lists-container">
+                <div class="lists-group">
+                    <label>Sort By</label>
+                    <select name="list-sort" id="list-sort" class="list-sort">
+                        <option value="price-lth">Price - Low to High</option>
+                        <option value="price-htl">Price - High to Low</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </div>
+                <div class="lists-group">
+                    <label>Filters</label>
+                    <select name="list-filter" id="list-filter" class="list-filter">
+                        <option value="">Price</option>
+                        <option value="">Category</option>
+                        <option value="">Size</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-container"></div>
+        </div>
+    </section>
+    <script src="/script.js"></script>
+</body>
+
+</html>
